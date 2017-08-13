@@ -1,0 +1,44 @@
+---
+title: 'Analysis of mtcars dataset using Shiny'
+author: "Nanda kumar Sathiyamoorthy"
+date: "August 14, 2017"
+output: ioslides_presentation
+---
+
+## Introduction
+
+- This is the final project of the Developing data products course on Coursera. 
+
+- Here we demonstrate the use of Shiny by building an app to analyse the mtcars dataset. 
+
+- Slidy has been used to create the presentation slides.
+
+- Plotly has been used to make interactive plots in the Shiny application.
+
+## mtcars Dataset
+
+mtcars is an built-in data set in R that has been extracted from the 1974 Motor Trend US magazine, and comprises fuel consumption and 10 aspects of automobile design and performance for 32 automobiles (1973–74 models).
+
+```{r}
+head(mtcars)
+```
+
+## Correlation plot
+
+```{r echo = FALSE}
+library(corrplot)
+```
+
+```{r fig.height=4, fig.width=7}
+corrplot(cor(mtcars))
+```
+
+## Shiny Application
+
+The Shiny Application can be found here :
+
+https://nandakumar212.shinyapps.io/DevelopingDataProductsShiny/
+
+- Here we make scatterplots for the variables that user selects.
+- Correlation between the selected variables are also calculated and displayed.
+- Also, a data table corresponding to the subset of data being analysed is shown.
