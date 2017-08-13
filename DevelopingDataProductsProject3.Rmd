@@ -30,7 +30,7 @@ library(corrplot)
 ```
 
 ```{r fig.height=4, fig.width=7}
-corrplot(cor(mtcars)) 
+corrplot(cor(mtcars))
 ```
 
 ## Shiny Application
